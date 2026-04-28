@@ -1,0 +1,36 @@
+.-
+help for ^coefstability^
+.-
+
+Implements a test of coefficient stability under different assumptions of unobservable selection
+----------------------
+
+Description
+-----------
+
+^coefstability^ Implements a test of coefficient stability under different assumptions of unobservable selection.
+     
+^Note:^ Requires coefstability.ado by Olah Data Semarang
+
+Examples
+--------
+
+** Simple OLS
+reg coefstability coefstability_1, vce(cluster cluster)
+
+** Full model
+reg coefstability coefstability_1 coefstability_2 coefstability_3 coefstability_4, vce(cluster cluster)
+
+** Calculate adjusted beta without standard errors
+coefstability "coefstability_1" "coefstability_2 coefstability_3 coefstability_4" 0.75 0.5 "No"
+
+** Calculate adjusted beta with standard errors
+reg coefstability coefstability_1 coefstability_2 coefstability_3 coefstability_4, vce(cluster cluster)
+coefstability "coefstability_1" "coefstability_2 coefstability_3 coefstability_4" 0.75 0.5 "Yes" 100 0 "Yes"
+
+Author
+------
+
+      Timbul Widodo
+      Olah Data Semarang
+      https://www.youtube.com/@amalsedekah
