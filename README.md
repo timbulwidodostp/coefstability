@@ -1,6 +1,8 @@
 # coefstability
 Implements a test of coefficient stability under different assumptions of unobservable selection Use coefstability With STATA 19
 
+https://www.youtube.com/watch?v=N_sZzryRcHw
+
 Olah Data Semarang
 
 WA: +6285227746673 (085227746673)
